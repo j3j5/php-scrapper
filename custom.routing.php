@@ -9,7 +9,7 @@
 if(PHP_SAPI == 'cli') {
 	$arguments_structure = array(
 		'controller',
-		'website',
+		'url',
 	);
 } else {
 	// The url would be as follows http://yourserver.com/controller/variable1
