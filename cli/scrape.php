@@ -14,13 +14,13 @@ switch($url_parts['host']) {
 	case "last.fm":
 	case "slashdot.org":
 	default:
-		$sub_controller_file = __DIR__ . $url_parts['host'] . '.php';
+		$sub_controller_file = __DIR__ . '/' . $url_parts['host'] . '.php';
 		if(is_file($sub_controller_file) && is_readable($sub_controller_file)) {
 			$log->addDebug("Loading subcontroller for {$url_parts['host']}");
 			include($sub_controller_file);
 			exit;
 		}
 }
-$log->addDebug("{$url_parts['host']} not found. Default:");
+$log->addDebug("{$url_parts['host']} not found. Default.");
 
 $log->addInfo("Title of the page is: " . $html->find("head title", 0)->plaintext);
