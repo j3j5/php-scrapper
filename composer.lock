@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93a90783d0c2001b80f3b0fa22745696",
+    "hash": "15f9ed7b721776619211ac88e117b631",
     "packages": [
         {
             "name": "illuminate/cache",
@@ -145,6 +145,45 @@
                 }
             ],
             "time": "2015-01-27 20:51:43"
+        },
+        {
+            "name": "marcushat/rolling-curl-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/j3j5/RollingCurlX.git",
+                "reference": "9ab3d2f02c21def44b8537a04daecbd5885793ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/j3j5/RollingCurlX/zipball/9ab3d2f02c21def44b8537a04daecbd5885793ea",
+                "reference": "9ab3d2f02c21def44b8537a04daecbd5885793ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "marcushat": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julio Foulquie",
+                    "email": "jfoulquie@gmail.com"
+                },
+                {
+                    "name": "Marcus Hat"
+                }
+            ],
+            "description": "Easy to use cURL Multi wrapper for PHP.",
+            "time": "2015-04-14 08:32:34"
         },
         {
             "name": "mgargano/simplehtmldom",
@@ -459,7 +498,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "marcushat/rolling-curl-x": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
