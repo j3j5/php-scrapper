@@ -11,6 +11,8 @@ if(!isset($url_parts['host'])) {
 }
 $log->addInfo("Parsing host {$url_parts['host']}");
 switch($url_parts['host']) {
+	case "www.last.fm":
+		$url_parts['host'] = mb_substr($url_parts['host'], 4);
 	case "last.fm":
 	case "slashdot.org":
 	default:
